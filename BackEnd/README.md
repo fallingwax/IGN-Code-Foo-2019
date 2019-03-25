@@ -2,17 +2,27 @@ Back End
 
 File List:
 
-css/style.css
-logs/
-sql database/ignfeeddata.sql
-uploads/
-class_dbconnection.php
-class_log.php
-db_config.php
-index.php
-search.php
-upload.php
-codefoo.csv
+-css/style.css
+
+-logs/
+
+-sql database/ignfeeddata.sql
+
+-uploads/
+
+-class_dbconnection.php
+
+-class_log.php
+
+-db_config.php
+
+-index.php
+
+-search.php
+
+-upload.php
+
+-codefoo.csv
 
 This directory contains all files for the Back End requirement. 
 
