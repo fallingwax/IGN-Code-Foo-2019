@@ -45,3 +45,4 @@ Service Utilizing MySQL data
 This service would be useful when trying to gather data about all articles or videos based on certain subject. In could be used to process a
 search on the IGN website looking for all videos about Apex Legends. The JSON format allows easy access to the data and a standard format
 for parsing through it. 
+
