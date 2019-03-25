@@ -1,0 +1,20 @@
+{"welcome_message":"Hi there! Good luck!",
+ "warning":"Occasionally this API may go down for a brief period. Retry your request if you see this behavior. Catch the error if you're feeling confident :).",
+ "endpoints":[
+     {"methods":["GET"],
+      "route":["/content"],
+      "description":"Returns a list of content (articles and videos) sorted by publish date (descending) as JSON",
+      "supportedParameters":
+          {"startIndex":"The index of the first record to return in the response. Used for pagination. Default is 0, min is 0, max is 300",
+           "count":"The number of records to return in the response. Default is 10, min is 1, max is 20.",
+           "callback":"JSONP support"},
+      "contentType":"application/json; charset=utf-8",
+      "sampleRequest":"https://ign-apis.herokuapp.com/content?startIndex=30\u0026count=5"},
+     {"methods":["GET","POST"],
+      "route":["/comments"],
+      "description":"Returns a list of the number of comments a piece of content has",
+      "supportedParameters":
+        {"ids":"ON GET: A comma delimited string of contentIds.  ON POST: A JSON array of contentIds.  Max of 20",
+        "callback":"JSONP support"},
+        "contentType":"application/json; charset=utf-8",
+        "sampleRequest":"https://ign-apis.herokuapp.com/comments?ids=3de45473c5662f25453551a2e1cb4e6e,63a71f01cca67c9bbf5e7b6f091d551d"}]}

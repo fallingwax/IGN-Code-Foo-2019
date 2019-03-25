@@ -1,0 +1,18 @@
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+img {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 0.8;
+    
+}
+
+h2 {
+    color: red !important;
+}
+

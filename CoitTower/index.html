@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="Coit Tower full of pokeballs" content="How many pokeballs fit inside the Coit Tower">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coit Tower full of Pokeballs</title>
+    <!--- Favicon -->
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="text-center">
+                 <h1>How many Pokeballs fit inside the Coit Tower</h1>
+                 <h6>Click image to find out!</h6>
+            </div>
+        </header>
+        <div class="row justify-content-center align-items-center mt-4 image-wrapper">
+            <img src="img/coit-tower-snorlax.jpg" alt="Snorlax guarding the Coit Tower">
+        </div>
+        <div class="d-none" id="answer">
+            <div class="row justify-content-center align-items-center mt-4">
+                <h2>Approx. 120 Million Pokeballs</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <img src="img/pokeball.png" alt="Pokeball" width="50" height="50">
+            </div>
+            <div class="row">
+                <p>To determine how many Pokeballs would fit inside the Coit Tower, I began by researching what size a real life Pokeball might be. Based on the various media descriptions of a Pokeball, its size varies depending on its state. When its stored in a pouch or other containment unit it can be shrunken by pressing the button to roughly the size of a golf ball. Pressing the button again will expand it to the size of an orange and can be used for catching Pokemon.  With that information I will assume that these Pokeballs are in their storage state and thus about the size of a golf ball. A goft ball has a diameter of 1.68 inches and a volume of approximately 2.5 inches&sup3;.</p>
+            </div>
+            <div class="row">
+                <p>The Coit Tower is a cylindrical tower that stands 210-feet tall. I have estimated that the diameter of the tower at its widest point is about 40ft. Using that information I have calculated the volume of the tower if it was totally empty to 263,894 feet&sup3;. However, I need to convert that to inches&sup3; to determine the number of pokeballs that will fit side, so the volume is 456,008,832 inches&sup3;.</p>
+            </div>
+            <div class="row">
+                <p>Based on the volume of the tower and the approximate volume of a single Pokeball, I calculate that 182,403,500 Pokeballs can fit inside the empty tower. However, this is not taking into account everything that is inside the tower.  The tower itself sits atop a rectangular concrete base that holds the lobby and an art gallery of murals.  It is constructed of three nested concrete cylinders and an observation deck that tapers in and is opened for viewing.  The inner most cylinder holds an elevetor shaft and the middle cylinder hold a stairwell. Not knowing the dimensions of the all of that, I am guessing it will account for about 33&#37; of the total volume of the empty tower. Therefore I estimate that about 120,000,000 Pokeballs would fit inside the Coit Tower. 
+            </div>
+            <div class="row">
+                <p>I think they those Pokeballs are pretty safe from Team Rocket, Snorlax has got to be pretty hard to move.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$('img').on("click", function(e) {
+    $(this).addClass("d-none");
+    $('#answer').removeClass("d-none");
+}) 
+    
+</script>
+    
+</html>
